@@ -6,6 +6,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
@@ -14,10 +16,10 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_second);
 
         //set listeners
-        Button firstPage = findViewById(R.id.firstPage);
+        RelativeLayout firstPage = findViewById(R.id.firstPage);
         firstPage.setOnClickListener(this);
 
-        Button secondPage = findViewById(R.id.secondPage);
+        RelativeLayout secondPage = findViewById(R.id.secondPage);
         secondPage.setOnClickListener(this);
     }
 
