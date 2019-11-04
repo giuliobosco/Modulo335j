@@ -3,4 +3,7 @@
     <string name="code_language">java</string>
     <string name="app_description">Development of Mobile Application for Android</string>
     <string name="execises">execises</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
