@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 public class SettingsFragment extends Fragment {
 
 
-    public SettingsFragment(AppSettings settings) {
+    public SettingsFragment() {
         // Required empty public constructor
     }
 

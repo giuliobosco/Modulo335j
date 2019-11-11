@@ -28,17 +28,9 @@ import com.google.android.material.navigation.NavigationView;
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    /**
-     * App Settings.
-     */
-    private AppSettings settings;
 
-    /**
-     * Create home fragment with app settings.
-     * @param settings App settings.
-     */
-    public HomeFragment(AppSettings settings) {
-        this.settings = settings;
+    public HomeFragment() {
+
     }
 
     /**
@@ -87,28 +79,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
             switch (id) {
                 case R.id.homeDashIcon:
-                    replace(new HomeFragment(settings));
+                    replace(new HomeFragment());
                     navigationView.setCheckedItem(R.id.nav_home);
-                    break;
-                case R.id.baseToolsDashIcon:
-                    replace(new BaseToolsFragment(settings));
-                    navigationView.setCheckedItem(R.id.nav_base_tools);
-                    break;
-                case R.id.baseViewsElementsDashIcon:
-                    replace(new BaseViewsElementsFragment(settings));
-                    navigationView.setCheckedItem(R.id.nav_base_views_elements);
-                    break;
-                case R.id.layoutsDashIcon:
-                    replace(new LayoutFragment(settings));
-                    navigationView.setCheckedItem(R.id.nav_layouts);
-                    break;
-                case R.id.userInterfacesDashIcon:
-                    replace(new UserInterfacesFragment(settings));
-                    navigationView.setCheckedItem(R.id.nav_user_interfaces);
-                    break;
-                case R.id.dataDashIcon:
-                    replace(new DataFragment(settings));
-                    navigationView.setCheckedItem(R.id.nav_data);
                     break;
             }
         }
