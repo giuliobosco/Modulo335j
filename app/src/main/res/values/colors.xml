@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="splashTitleColor">#000000</color>
+    <color name="bgColor">#FA8072</color>
 </resources>

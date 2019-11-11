@@ -6,4 +6,8 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="splash_title">84sp</dimen>
+    <dimen name="fragment_title">40sp</dimen>
+    <dimen name="margin_dash">0.125dp</dimen>
+    <dimen name="dash_icon">130dp</dimen>
+    <dimen name="dash_titles">18dp</dimen>
 </resources>

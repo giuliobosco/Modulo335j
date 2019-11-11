@@ -25,4 +25,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_base_elements">Base Views\nElements</string>
+    <string name="menu_base_tools">Base Tools</string>
+    <string name="menu_layouts">Layouts</string>
+    <string name="menu_data">Data</string>
+    <string name="menu_user_interfaces">User Interfaces</string>
 </resources>
