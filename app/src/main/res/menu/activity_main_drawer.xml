@@ -6,11 +6,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_home_black_24dp"
+            android:icon="@drawable/ic_menu_home"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_toast"
-            android:icon="@drawable/bread"
+            android:icon="@drawable/ic_menu_toast"
             android:title="@string/menu_toast" />
         <item
             android:id="@+id/nav_base_views"
@@ -18,31 +18,31 @@
             android:title="@string/menu_base_views" />
         <item
             android:id="@+id/nav_toolbar"
-            android:icon="@drawable/ic_more_horiz_black_24dp"
+            android:icon="@drawable/ic_menu_more"
             android:title="@string/menu_tool_bar" />
         <item
             android:id="@+id/nav_spinner"
-            android:icon="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:icon="@drawable/ic_menu_key_down"
             android:title="@string/menu_spinner" />
         <item
             android:id="@+id/nav_dialog"
-            android:icon="@drawable/ic_branding_watermark_black_24dp"
+            android:icon="@drawable/ic_menu_dialog"
             android:title="@string/menu_dialog" />
         <item
             android:id="@+id/nav_activity_for_result"
-            android:icon="@drawable/ic_call_to_action_black_24dp"
+            android:icon="@drawable/ic_menu_activity_for_result"
             android:title="@string/menu_start_activity_for_result" />
         <item
             android:id="@+id/nav_data_props"
-            android:icon="@drawable/ic_save_black_24dp"
+            android:icon="@drawable/ic_menu_save"
             android:title="@string/menu_save_data_props" />
         <item
             android:id="@+id/nav_data_files"
-            android:icon="@drawable/ic_sd_storage_black_24dp"
+            android:icon="@drawable/ic_menu_sd_storage"
             android:title="@string/menu_save_data_files" />
         <item
             android:id="@+id/nav_data_db"
-            android:icon="@drawable/ic_database"
+            android:icon="@drawable/ic_menu_database"
             android:title="@string/menu_save_data_db" />
     </group>
     <!--
