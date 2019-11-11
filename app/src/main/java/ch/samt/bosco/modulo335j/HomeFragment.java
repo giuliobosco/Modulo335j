@@ -16,13 +16,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.google.android.material.navigation.NavigationView;
+
 
 /**
  * A simple {@link Fragment} subclass.
  *
  * @author giuliobosco
  * @author bryanbeffa
- * @version 1.0 (2019-11-11 - 2019-11-11)
+ * @version 1.0.1 (2019-11-11 - 2019-11-11)
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
@@ -78,26 +80,37 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
      */
     @Override
     public void onClick(View view) {
-        int id = view.getId();
+        if (getActivity() != null) {
+            int id = view.getId();
+            NavigationView navigationView = getActivity().findViewById(R.id.nav_view);
 
-        switch (id) {
-            case R.id.homeDashIcon:
-                replace(new HomeFragment(settings));
-                break;
-            case R.id.baseToolsDashIcon:
-                replace(new BaseToolsFragment(settings));
-                break;
-            case R.id.baseViewsElementsDashIcon:
-                replace(new BaseViewsElementsFragment(settings));
-                break;
-            case R.id.layoutsDashIcon:
-                replace(new LayoutFragment(settings));
-                break;
-            case R.id.userInterfacesDashIcon:
-                replace(new UserInterfacesFragment(settings));
-                break;
-            case R.id.dataDashIcon:
-                replace(new DataFragment(settings));
+
+            switch (id) {
+                case R.id.homeDashIcon:
+                    replace(new HomeFragment(settings));
+                    navigationView.setCheckedItem(R.id.nav_home);
+                    break;
+                case R.id.baseToolsDashIcon:
+                    replace(new BaseToolsFragment(settings));
+                    navigationView.setCheckedItem(R.id.nav_base_tools);
+                    break;
+                case R.id.baseViewsElementsDashIcon:
+                    replace(new BaseViewsElementsFragment(settings));
+                    navigationView.setCheckedItem(R.id.nav_base_views_elements);
+                    break;
+                case R.id.layoutsDashIcon:
+                    replace(new LayoutFragment(settings));
+                    navigationView.setCheckedItem(R.id.nav_layouts);
+                    break;
+                case R.id.userInterfacesDashIcon:
+                    replace(new UserInterfacesFragment(settings));
+                    navigationView.setCheckedItem(R.id.nav_user_interfaces);
+                    break;
+                case R.id.dataDashIcon:
+                    replace(new DataFragment(settings));
+                    navigationView.setCheckedItem(R.id.nav_data);
+                    break;
+            }
         }
     }
 
