@@ -3,10 +3,11 @@
 ### TODO
 
 - Categories
-	- Base Elements
+	- Home
+	- Base Tools
 		- Toast
 		- Alerts
-	- Base Views
+	- Base Elements/Views
 		- TextView
 		- TextBox
 		- Button
